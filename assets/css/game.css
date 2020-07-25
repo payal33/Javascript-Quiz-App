@@ -1,0 +1,78 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86,165,235,0.35);
+    background-color: white;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2rem;
+    background-color: #2b61cc;
+    color: white;
+    font-family: Lato;
+    font-weight: bold;
+}
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+    font-family: "Slabo 27px";
+}
+
+h4 {
+    font-family: Lato;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.correct{
+    background-color: #28a745;
+}
+
+.incorrect{
+    background-color: #dc3545;
+}
+
+/* HUD  Heads Up Display */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Lato;
+    font-weight: 700;
+}
+.hud-main-text{
+    text-align: center;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+/* Progress bar */
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.3rem solid #2b61cc;
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full{
+    height: 2.5rem;
+    background-color: #2b61cc;
+    width: 0%;
+}
+

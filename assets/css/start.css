@@ -1,0 +1,88 @@
+body{
+    background-color: #cfe7fa;
+}
+
+.container   {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: space-evenly;
+    }
+
+img {
+    width: 80%;
+    float: left;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center{
+    justify-content: space-evenly;
+    align-items:top;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4.5rem;
+    font-family: Staatliches;
+    color:#01051f;
+    font-weight: 400;
+}
+
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 12rem;
+    text-align: center;
+    border: 0.1rem solid#56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0;
+    /* when we hover it just moves up slightly */
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.content_img{
+    position: relative;
+}
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: Lato;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover{
+    cursor: pointer;
+}
+
+
+.content_img:hover div{
+    width: 200px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.6; 
+   }
